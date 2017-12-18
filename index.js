@@ -1,10 +1,8 @@
-'use strict';
 
+var Gpio = require('pigpio').Gpio
+var green = new Gpio(17, {mode: Gpio.OUTPUT})
 
-// var Gpio = require('pigpio').Gpio
-// var green = new Gpio(17, {mode: Gpio.OUTPUT})
-
-// green.pwmWrite(255); // high sends power
+green.pwmWrite(255); // high blocks
 console.log("high");
 
 setInterval(function() {
@@ -14,4 +12,4 @@ setInterval(function() {
     green.pwmWrite(0);
     console.log("low");
   },100);
-}, 20000)
+}, 1000)
