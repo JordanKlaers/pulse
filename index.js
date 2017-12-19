@@ -13,4 +13,4 @@ setInterval(function() {
     green.pwmWrite(0);
     console.log("low");
   },200);
-}, 20000)
+}, 15000)
