@@ -12,5 +12,5 @@ setInterval(function() {
   setTimeout(function(){
     green.pwmWrite(0);
     console.log("low");
-  },100);
+  },200);
 }, 20000)
